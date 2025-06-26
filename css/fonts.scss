@@ -16,23 +16,32 @@ $fs-heading-3: 2.188rem;
 /* 35px */
 $fs-heading-4: 1.875rem;
 /* 30px */
-$fs-subheading: 1.25rem;
+$fs-body: 1.25rem;
 /* 20px */
-$fs-body: 1rem;
-/* 16px */
 
-// Font weight
-
+// Font weights
 $fw-extra-bold: 800;
 $fw-bold: 700;
 $fw-semi-bold: 550;
 $fw-medium: 425;
 $fw-regular: 300;
 
-// Colors
+h1 {
+    font-size: $fs-heading-1;
+}
 
-$clr-white:#ffffff; // White
-$clr-light-grey:#ededec; // Anti-flash-white
-$clr-grey: #454545; // Onyx
-$clr-dark-grey: #343635; // Onyx
-$clr-black: #454545; // Eerie black
+h2 {
+    font-size: $fs-heading-2;
+}
+
+h3 {
+    font-size: $fs-heading-3;
+}
+
+h4 {
+    font-size: $fs-heading-4;
+}
+
+p {
+    font-size: $fs-body;
+}
