@@ -30,20 +30,25 @@ $fw-regular: 300;
 
 h1 {
     font-size: $fs-heading-1;
+    font-family: $text-primary;
 }
 
 h2 {
     font-size: $fs-heading-2;
+    font-family: $text-primary;
 }
 
 h3 {
     font-size: $fs-heading-3;
+    font-family: $text-primary;
 }
 
 h4 {
     font-size: $fs-heading-4;
+    font-family: $text-primary;
 }
 
 p {
     font-size: $fs-body;
+    font-family: $text-secondary;
 }

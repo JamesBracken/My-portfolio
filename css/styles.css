@@ -8,22 +8,27 @@
 /* 16px */
 h1 {
   font-size: 3.125rem;
+  font-family: "Roboto", serif;
 }
 
 h2 {
   font-size: 2.5rem;
+  font-family: "Roboto", serif;
 }
 
 h3 {
   font-size: 2.188rem;
+  font-family: "Roboto", serif;
 }
 
 h4 {
   font-size: 1.875rem;
+  font-family: "Roboto", serif;
 }
 
 p {
   font-size: 1rem;
+  font-family: "Lato", serif;
 }
 
 a {
@@ -33,6 +38,7 @@ a {
 
 body {
   background-color: #454545;
+  color: #ffffff;
 }
 
 nav {
