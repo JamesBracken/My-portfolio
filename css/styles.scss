@@ -1,4 +1,31 @@
 @use "fonts";
 @use "palette";
+@use "mixins";
 
+// Resetting base styles here globally
 
+a {
+    text-decoration: none;
+    color: palette.$clr-white;
+}
+
+body {
+    background-color: palette.$clr-black;
+}
+
+nav {
+
+    background-color: palette.$clr-black;
+    color: palette.$clr-white;
+
+    .navbar__brand {
+        font-family: fonts.$text-primary;
+        font-size: fonts.$fs-heading-3;
+    }
+
+    .navbar__link {
+        font-size: fonts.$fs-body;
+        font-family: fonts.$text-secondary;
+        @include mixins.hover-underline;
+    }
+}
