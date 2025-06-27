@@ -4,6 +4,10 @@
 
 // Resetting base styles here globally
 
+img {
+    object-fit: cover;
+}
+
 a {
     text-decoration: none;
     color: palette.$clr-white;
@@ -28,5 +32,16 @@ nav {
         font-size: fonts.$fs-body;
         font-family: fonts.$text-secondary;
         @include mixins.hover-underline;
+    }
+}
+
+#portfolio {
+    // .project-img {
+    //     max-height: 300px;
+    // }
+
+    .image-wrapper {
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
     }
 }

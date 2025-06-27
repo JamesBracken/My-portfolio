@@ -31,6 +31,10 @@ p {
   font-family: "Lato", serif;
 }
 
+img {
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -67,4 +71,9 @@ nav .navbar__link:after {
 }
 nav .navbar__link:hover:after {
   width: 100%;
+}
+
+#portfolio .image-wrapper {
+  aspect-ratio: 3/2;
+  overflow: hidden;
 }
