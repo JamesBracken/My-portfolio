@@ -16,6 +16,12 @@ a {
 body {
     background-color: palette.$clr-black;
     color: palette.$clr-white;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
