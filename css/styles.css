@@ -94,3 +94,7 @@ nav .navbar__link:hover:after {
   aspect-ratio: 3/4;
   max-height: 300px;
 }
+#about-me .tech__img {
+  width: 50px;
+  height: 50px;
+}
