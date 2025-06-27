@@ -36,12 +36,22 @@ nav {
 }
 
 #portfolio {
-    // .project-img {
-    //     max-height: 300px;
-    // }
 
-    .image-wrapper {
+    .image__wrapper {
         aspect-ratio: 3 / 2;
         overflow: hidden;
     }
+
+    .portfolio__container {
+        background-color: palette.$clr-grey;
+
+
+        .tech__tag {
+            background-color: palette.$clr-light-grey;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    }
+
+
 }

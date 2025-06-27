@@ -41,12 +41,12 @@ a {
 }
 
 body {
-  background-color: #454545;
+  background-color: #343635;
   color: #ffffff;
 }
 
 nav {
-  background-color: #454545;
+  background-color: #343635;
   color: #ffffff;
 }
 nav .navbar__brand {
@@ -73,7 +73,15 @@ nav .navbar__link:hover:after {
   width: 100%;
 }
 
-#portfolio .image-wrapper {
+#portfolio .image__wrapper {
   aspect-ratio: 3/2;
   overflow: hidden;
+}
+#portfolio .portfolio__container {
+  background-color: #454545;
+}
+#portfolio .portfolio__container .tech__tag {
+  background-color: #757575;
+  border-radius: 10px;
+  display: inline-block;
 }
