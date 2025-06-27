@@ -31,6 +31,10 @@ p {
   font-family: "Lato", serif;
 }
 
+.subheading {
+  font-size: 1.25rem;
+}
+
 img {
   object-fit: cover;
 }
@@ -84,4 +88,9 @@ nav .navbar__link:hover:after {
   background-color: #757575;
   border-radius: 10px;
   display: inline-block;
+}
+
+#about-me .image__wrapper {
+  aspect-ratio: 3/4;
+  max-height: 300px;
 }
