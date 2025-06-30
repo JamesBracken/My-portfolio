@@ -77,4 +77,10 @@ nav {
 }
 
 
-// Overriding bootstrap styles
+
+.footer {
+
+    &__icon {
+        font-size: 40px;
+    }
+}
