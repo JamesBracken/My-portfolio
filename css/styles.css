@@ -1,6 +1,6 @@
 /* Headings */
 /* Body text */
-/* 50px */
+/* 65px */
 /* 50px */
 /* 40px */
 /* 35px */
@@ -15,7 +15,6 @@ h1 {
 @media only screen and (min-width: 993px) {
   h1 {
     font-size: 4.063rem;
-    /* 50px */
   }
 }
 
@@ -93,10 +92,18 @@ nav .navbar__link:hover:after {
   width: 100%;
   color: #ffffff;
 }
+nav .navbar__link:hover {
+  color: #FFDD1F;
+  transition: 300ms;
+}
 
 #portfolio .image__wrapper {
   aspect-ratio: 3/2;
   overflow: hidden;
+}
+#portfolio .image__wrapper:hover {
+  box-shadow: 0px 4px 12px -2px #FFDD1F, 0px 3px 7px -3px #FFDD1F !important;
+  transition: box-shadow 0.3s ease-in-out !important;
 }
 #portfolio .portfolio__container {
   background-color: #454545;
@@ -105,6 +112,18 @@ nav .navbar__link:hover:after {
   background-color: #757575;
   border-radius: 10px;
   display: inline-block;
+}
+#portfolio .portfolio__container .code__icon {
+  background-color: #757575;
+  border-radius: 50px;
+}
+#portfolio .portfolio__container .code__icon:hover {
+  background-color: #FFDD1F;
+  transition: 0.3s ease-in-out;
+}
+
+.project__image:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
 }
 
 #about-me .image__wrapper {
@@ -130,4 +149,8 @@ nav .navbar__link:hover:after {
 
 .footer__icon {
   font-size: 40px;
+}
+.footer__icon:hover {
+  color: #FFDD1F;
+  transition: 300ms;
 }

@@ -1,4 +1,5 @@
 @use "mixins";
+@use "palette";
 // Global variables
 
 // Font families
@@ -10,7 +11,7 @@ $text-secondary: "Lato",
 serif;
 // Font sizes
 $fs-heading-1-lg: 4.063rem;
-/* 50px */
+/* 65px */
 $fs-heading-1: 3.125rem;
 /* 50px */
 $fs-heading-2: 2.5rem;
@@ -34,13 +35,13 @@ $fw-semi-bold: 550;
 $fw-medium: 425;
 $fw-regular: 300;
 
+
 h1 {
     font-size: $fs-heading-1;
     font-family: $text-primary;
 
     @include mixins.large-screen {
         font-size: $fs-heading-1-lg;
-        /* 50px */
     }
 }
 
