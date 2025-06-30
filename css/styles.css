@@ -4,6 +4,7 @@
 /* 40px */
 /* 35px */
 /* 30px */
+/* 25px */
 /* 20px */
 /* 16px */
 h1 {
@@ -32,7 +33,7 @@ p {
 }
 
 .subheading {
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
 }
 
 img {
@@ -106,6 +107,15 @@ nav .navbar__link:hover:after {
 #about-me .tech__img {
   width: 50px;
   height: 50px;
+}
+
+#contact-me-container p {
+  font-size: 1.25rem;
+  display: block;
+}
+#contact-me-container a {
+  font-size: 1.25rem;
+  display: block;
 }
 
 .footer__icon {
