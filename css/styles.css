@@ -1,0 +1,156 @@
+/* Headings */
+/* Body text */
+/* 65px */
+/* 50px */
+/* 40px */
+/* 35px */
+/* 30px */
+/* 25px */
+/* 20px */
+/* 16px */
+h1 {
+  font-size: 3.125rem;
+  font-family: "Roboto", serif;
+}
+@media only screen and (min-width: 993px) {
+  h1 {
+    font-size: 4.063rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Roboto", serif;
+}
+
+h3 {
+  font-size: 2.188rem;
+  font-family: "Roboto", serif;
+}
+
+h4 {
+  font-size: 1.875rem;
+  font-family: "Roboto", serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Lato", serif;
+}
+
+.subheading {
+  font-size: 1.5625rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  background-color: #343635;
+  color: #ffffff;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #343635;
+  color: #ffffff;
+}
+nav .navbar__brand {
+  font-family: "Roboto", serif;
+  font-size: 2.188rem;
+}
+nav .navbar__link {
+  font-size: 1rem;
+  font-family: "Lato", serif;
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+nav .navbar__link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #ffffff;
+  height: 1px;
+  width: 0;
+  transition: width 300ms;
+  color: #ffffff;
+}
+nav .navbar__link:hover:after {
+  width: 100%;
+  color: #ffffff;
+}
+nav .navbar__link:hover {
+  color: #FFDD1F;
+  transition: 300ms;
+}
+
+#portfolio .image__wrapper {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+#portfolio .image__wrapper:hover {
+  box-shadow: 0px 4px 12px -2px #FFDD1F, 0px 3px 7px -3px #FFDD1F !important;
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+#portfolio .portfolio__container {
+  background-color: #454545;
+}
+#portfolio .portfolio__container .tech__tag {
+  background-color: #757575;
+  border-radius: 10px;
+  display: inline-block;
+}
+#portfolio .portfolio__container .code__icon {
+  background-color: #757575;
+  border-radius: 50px;
+}
+#portfolio .portfolio__container .code__icon:hover {
+  background-color: #FFDD1F;
+  transition: 0.3s ease-in-out;
+}
+
+.project__image:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+}
+
+#about-me .image__wrapper {
+  aspect-ratio: 3/4;
+  max-height: 300px;
+}
+#about-me .technologies__img {
+  width: 50px;
+  height: 50px;
+}
+#about-me .paragraph__text {
+  font-size: 1.25rem;
+}
+
+#contact-me-container p {
+  font-size: 1.25rem;
+  display: block;
+}
+#contact-me-container a {
+  font-size: 1.25rem;
+  display: block;
+}
+
+.footer__icon {
+  font-size: 40px;
+}
+.footer__icon:hover {
+  color: #FFDD1F;
+  transition: 300ms;
+}

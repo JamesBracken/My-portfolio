@@ -1,0 +1,55 @@
+@use "palette";
+
+// To have uniformity and consistency across the project bootstrap
+// breakpoints are used since these are already used in our html
+$sm: 576px; // small screens
+$md: 768px; // tablets
+$lg: 992px; // landscape tablets / laptops
+
+@mixin hover-underline {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        background-color: palette.$clr-white;
+        height: 1px;
+        width: 0;
+        transition: width 300ms;
+        color: palette.$clr-white;
+    }
+
+    &:hover:after {
+        width: 100%;
+        color: palette.$clr-white;
+    }
+}
+
+// Media query mixins
+
+@mixin extra-small-screen() {
+    @media only screen and (max-width:$sm) {
+        @content;
+    }
+}
+
+@mixin small-screen() {
+    @media only screen and (min-width:$sm) and (max-width:devices.$md) {
+        @content;
+    }
+}
+
+@mixin medium-screen() {
+    @media only screen and (min-width:$md) and (max-width:devices.$lg) {
+        @content;
+    }
+}
+
+@mixin large-screen() {
+    @media only screen and (min-width:($lg + 1px)) {
+        @content;
+    }
+}

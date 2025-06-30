@@ -1,0 +1,144 @@
+@use "fonts";
+@use "palette";
+@use "mixins";
+// Global variables
+
+$box-shadow: 0px 4px 12px -2px palette.$clr-primary,
+0px 3px 7px -3px palette.$clr-primary;
+// Resetting base styles here globally
+
+img {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: palette.$clr-white;
+}
+
+body {
+    background-color: palette.$clr-black;
+    color: palette.$clr-white;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+
+    background-color: palette.$clr-black;
+    color: palette.$clr-white;
+
+    .navbar__brand {
+        font-family: fonts.$text-primary;
+        font-size: fonts.$fs-heading-3;
+    }
+
+    .navbar__link {
+        font-size: fonts.$fs-body-small;
+        font-family: fonts.$text-secondary;
+        @include mixins.hover-underline;
+        color: palette.$clr-white;
+    }
+
+    .navbar__link:hover {
+        color: palette.$clr-primary;
+        transition: 300ms;
+    }
+}
+
+#portfolio {
+
+    .image__wrapper {
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+    }
+
+    .image__wrapper:hover {
+        box-shadow: $box-shadow !important;
+        transition: box-shadow .3s ease-in-out !important;
+    }
+
+    .portfolio__container {
+        background-color: palette.$clr-grey;
+
+
+        .tech__tag {
+            background-color: palette.$clr-light-grey;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .code__icon {
+            background-color: palette.$clr-light-grey;
+            border-radius: 50px;
+        }
+
+        .code__icon:hover {
+            background-color: palette.$clr-primary;
+            transition: .3s ease-in-out;
+        }
+    }
+
+    // .project__image:hover {
+    //     box-shadow: $box-shadow !important;
+    //     transition: box-shadow .3s ease-in-out !important;
+    // }
+
+    // .cityCardBody:hover {
+    // box-shadow:
+    //     1px 1px rgba(104, 95, 95, 0.37),
+    //     -1px 0 rgba(104, 95, 95, 0.37);
+    // transition: box-shadow 0.4s ease-in-out;
+    // }
+}
+
+.project__image:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+}
+
+#about-me {
+
+    .image__wrapper {
+        aspect-ratio: 3 / 4;
+        max-height: 300px;
+    }
+
+    .technologies__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .paragraph__text {
+        font-size: fonts.$fs-body-large;
+    }
+}
+
+#contact-me-container {
+    p {
+        font-size: fonts.$fs-body-large;
+        display: block;
+    }
+
+    a {
+        font-size: fonts.$fs-body-large;
+        display: block;
+    }
+}
+
+
+.footer {
+
+    &__icon {
+        font-size: 40px;
+    }
+
+    &__icon:hover {
+        color: palette.$clr-primary;
+        transition: 300ms;
+    }
+}
