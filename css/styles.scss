@@ -38,6 +38,7 @@ nav {
         font-size: fonts.$fs-body;
         font-family: fonts.$text-secondary;
         @include mixins.hover-underline;
+        color: palette.$clr-white;
     }
 }
 
@@ -74,3 +75,6 @@ nav {
         height: 50px;
     }
 }
+
+
+// Overriding bootstrap styles

@@ -68,6 +68,7 @@ nav .navbar__link {
   font-family: "Lato", serif;
   position: relative;
   display: inline-block;
+  color: #ffffff;
 }
 nav .navbar__link:after {
   content: "";
@@ -78,9 +79,11 @@ nav .navbar__link:after {
   height: 1px;
   width: 0;
   transition: width 300ms;
+  color: #ffffff;
 }
 nav .navbar__link:hover:after {
   width: 100%;
+  color: #ffffff;
 }
 
 #portfolio .image__wrapper {
