@@ -58,6 +58,8 @@ body {
 }
 
 .navbar {
+  position: sticky;
+  top: 0px;
   background-color: #343635;
   color: #ffffff;
 }

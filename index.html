@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navbar inital code taken from https://getbootstrap.com/docs/5.3/components/navbar/-->
+    <header class="fixed-top">
+        <!-- Navbar inital code taken from https://getbootstrap.com/docs/5.3/components/navbar/ -->
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
                 <p class="navbar__brand mx-3 mt-1">James Bracken</p>
@@ -33,14 +33,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav my-2 mb-2 mb-lg-0 ms-auto">
+
                         <li class="nav-item mx-3">
-                            <a class="nav-link navbar__link" aria-current="page" href="#">About</a>
+                            <a class="nav-link navbar__link" aria-label="Go to the portfolio section" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link navbar__link" href="#">Portfolio</a>
+                            <a class="nav-link navbar__link" aria-label="Go to the about section" href="#about">About</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link navbar__link" href="#">Contact</a>
+                            <a class="nav-link navbar__link" aria-label="Go to the contact section" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +78,7 @@
                     <!-- Project card -->
                     <div class="col-12 col-md-6 col-lg-4 p-3">
                         <div class="portfolio__image--wrapper">
-                            <a href="" target="_blank">
+                            <a href="" aria-label="Nothing here yet">
                                 <img class="h-100 w-100" src="./images/project-img-placeholder.avif"
                                     alt="Grey image"></a>
                         </div>
@@ -88,7 +89,7 @@
                                     <h3>Project</h3>
                                 </div>
                                 <div class="d-inline m-3 ms-auto">
-                                    <a href="" class="portfolio__code-icon p-2">&lt;/&gt;
+                                    <a href="" aria-label="Nothing here yet" class="portfolio__code-icon p-2">&lt;/&gt;
                                     </a>
                                 </div>
 
@@ -111,7 +112,7 @@
                     <!-- Project card -->
                     <div class="col-12 col-md-6 col-lg-4 p-3">
                         <div class="portfolio__image--wrapper">
-                            <a href="" target="_blank">
+                            <a href="" aria-label="Nothing here yet">
                                 <img class="h-100 w-100" src="./images/project-img-placeholder.avif"
                                     alt="Grey image"></a>
                         </div>
@@ -122,7 +123,7 @@
                                     <h3>Project 2</h3>
                                 </div>
                                 <div class="d-inline m-3 ms-auto">
-                                    <a href="" class="portfolio__code-icon p-2">&lt;/&gt;
+                                    <a href="" aria-label="Nothing here yet" class="portfolio__code-icon p-2">&lt;/&gt;
                                     </a>
                                 </div>
 
@@ -134,7 +135,7 @@
                         <!-- Placing image wrappers to ensure all images are
                          consistent in size regardless of aspect ratio -->
                         <div class="portfolio__image--wrapper">
-                            <a href="" target="_blank">
+                            <a href="" aria-label="Nothing here yet">
                                 <img class="h-100 w-100" src="./images/project-img-placeholder.avif"
                                     alt="Grey image"></a>
                         </div>
@@ -145,7 +146,7 @@
                                     <h3>Project 3</h3>
                                 </div>
                                 <div class="d-inline m-3 ms-auto">
-                                    <a href="" class="portfolio__code-icon p-2">&lt;/&gt;
+                                    <a href="" aria-label="Nothing here yet" class="portfolio__code-icon p-2">&lt;/&gt;
                                     </a>
                                 </div>
 
@@ -159,9 +160,9 @@
                         <!-- Placing image wrappers to ensure all images are
                          consistent in size regardless of aspect ratio -->
                         <div class="portfolio__image--wrapper">
-                            <a href="https://ember-and-ash-58ab64713078.herokuapp.com/" target="_blank">
-                                <img class="h-100 w-100" src="./images/project-img-placeholder.avif"
-                                    alt="Grey image"></a>
+                            <a aria-label="Opens the ember and ash website in a new tab" href="https://ember-and-ash-58ab64713078.herokuapp.com/" target="_blank">
+                                <img class="h-100 w-100" src="./images/ember-and-ash-project.PNG"
+                                    alt="Ember and ash Website"></a>
                         </div>
                         <div>
                             <div class="d-flex">
@@ -169,7 +170,7 @@
                                     <h3>Ember ash</h3>
                                 </div>
                                 <div class="d-inline m-3 ms-auto">
-                                    <a href="https://github.com/JamesBracken/Ember-Ash" class="portfolio__code-icon p-2"
+                                    <a aria-label="opens the ember and ash codebase in a new tab" href="https://github.com/JamesBracken/Ember-Ash" class="portfolio__code-icon p-2"
                                         target="_blank">&lt;/&gt;
                                     </a>
                                 </div>
@@ -189,9 +190,9 @@
                         <!-- Placing image wrappers to ensure all images are
                          consistent in size regardless of aspect ratio -->
                         <div class="portfolio__image--wrapper">
-                            <a href="https://pro-gainer-85d1fcf0b9b4.herokuapp.com/" target="_blank">
-                                <img class="h-100 w-100" src="./images/project-img-placeholder.avif"
-                                    alt="Grey image"></a>
+                            <a aria-label="Open the pro gainer website in a new tab" href="https://pro-gainer-85d1fcf0b9b4.herokuapp.com/" target="_blank">
+                                <img class="h-100 w-100" src="./images/pro-gainer-project.PNG"
+                                    alt="Pro gainer website"></a>
                         </div>
                         <div>
                             <div class="d-flex">
@@ -199,7 +200,7 @@
                                     <h3 class="me-auto">Pro Gainer(Build in progress)</h3>
                                 </div>
                                 <div class="d-inline m-3 ms-auto">
-                                    <a href="https://github.com/JamesBracken/Pro-Gainer"
+                                    <a aria-label="Open the pro gainer codebase in a new tab" href="https://github.com/JamesBracken/Pro-Gainer"
                                         class="portfolio__code-icon p-2" target="_blank">&lt;/&gt;
                                     </a>
                                 </div>

@@ -29,7 +29,8 @@ $lg: 992px; // landscape tablets / laptops
 }
 
 // Media query mixins
-
+// Not all media queries here are currently used however I will be 
+// Leaving them behind for future iterations of the project
 @mixin extra-small-screen() {
     @media only screen and (max-width:$sm) {
         @content;
