@@ -47,6 +47,7 @@ img {
 }
 
 body {
+  padding-top: 89px;
   background-color: #343635;
   color: #ffffff;
   max-width: 1600px;
