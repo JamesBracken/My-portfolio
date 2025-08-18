@@ -1,0 +1,14 @@
+@use "../abstracts/palette";
+
+.footer {
+
+    &__icon {
+        font-size: 40px;
+        color: palette.$clr-white;
+    }
+
+    &__icon:hover {
+        color: palette.$clr-primary;
+        transition: 300ms;
+    }
+}

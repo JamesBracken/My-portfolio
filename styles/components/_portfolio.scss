@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+@use "../abstracts/palette";
+
+.portfolio {
+
+    &__image--wrapper {
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+    }
+
+    &__image--wrapper:hover {
+        box-shadow: variables.$box-shadow;
+        transition: box-shadow .3s ease-in-out;
+    }
+
+    &__container--background {
+        background-color: palette.$clr-grey;
+    }
+
+    &__tech-tag {
+        background-color: palette.$clr-light-grey;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    &__code-icon {
+        background-color: palette.$clr-light-grey;
+        border-radius: 50px;
+        color: palette.$clr-white;
+        text-decoration: none;
+    }
+
+    &__code-icon:hover {
+        background-color: palette.$clr-primary;
+        transition: .3s ease-in-out;
+    }
+}

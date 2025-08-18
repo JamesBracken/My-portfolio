@@ -1,0 +1,5 @@
+@use "./palette";
+// Global variables
+
+$box-shadow: 0px 4px 12px -2px palette.$clr-primary,
+0px 3px 7px -3px palette.$clr-primary;

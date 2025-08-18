@@ -1,0 +1,12 @@
+@use "../abstracts/palette";
+@use "../base/typography";
+
+.contact-me-container {
+
+    &__text {
+        font-size: typography.$fs-body-large;
+        display: block;
+        color: palette.$clr-white;
+        text-decoration: none;
+    }
+}

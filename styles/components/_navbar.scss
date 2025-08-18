@@ -1,0 +1,28 @@
+@use "../abstracts/palette";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+.navbar {
+
+    position: sticky;
+    top: 0px;
+    background-color: palette.$clr-black;
+    color: palette.$clr-white;
+
+    &__brand {
+        font-family: typography.$text-primary;
+        font-size: typography.$fs-heading-3;
+    }
+
+    &__link {
+        font-size: typography.$fs-body-small;
+        font-family: typography.$text-secondary;
+        @include mixins.hover-underline;
+        color: palette.$clr-white;
+    }
+
+    &__link:hover {
+        color: palette.$clr-primary;
+        transition: 300ms;
+    }
+}
