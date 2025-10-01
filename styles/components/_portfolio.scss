@@ -9,7 +9,7 @@
     }
 
     &__image--wrapper:hover {
-        box-shadow: variables.$box-shadow;
+        box-shadow: variables.$yellow-box-shadow;
         transition: box-shadow .3s ease-in-out;
     }
 
